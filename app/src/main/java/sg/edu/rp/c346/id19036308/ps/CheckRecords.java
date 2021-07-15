@@ -48,7 +48,6 @@ public class CheckRecords extends AppCompatActivity {
                 FileReader reader = new FileReader(targetFile_I);
                 BufferedReader br = new BufferedReader(reader);
                 String line = br.readLine();
-                int numOfRecord = 0;
                 while (line != null){
 //                    tvRecords.setText(line);
                     data += line + "\n";
@@ -56,7 +55,6 @@ public class CheckRecords extends AppCompatActivity {
                     alRecords.add(line + "\n");
                     aaRecord.notifyDataSetChanged();
 //                    tvRecords.setText("Number of records: "+alRecords.size());
-                    numOfRecord ++;
 
 
 //                    tv.setText("Data: " + data );
