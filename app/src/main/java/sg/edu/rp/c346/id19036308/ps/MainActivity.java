@@ -163,10 +163,11 @@ public class MainActivity extends AppCompatActivity {
 //                                    currentLocation = map.addMarker(new MarkerOptions().position(current).title("Current Location").snippet("current Location").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 //                                }
 
+                                current = new LatLng(lat, lng);
+
                                 map.clear();
                                 currentLocation = map.addMarker(new MarkerOptions().position(current).title("Current Location").snippet("current Location").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-                                current = new LatLng(lat, lng);
 //                                currentLocation.remove();
 //                                currentLocation = map.addMarker(new MarkerOptions().position(current).title("Current Location").snippet("current Location").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 //                                currentLocation.remove();
